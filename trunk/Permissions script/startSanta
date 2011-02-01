@@ -1,0 +1,4 @@
+stty -F /dev/ttyUSB0 speed 9600 ignbrk -raw -brkint -icrnl -imaxbel -opost -onlcr -isig -icanon -iexten -echo -echoe -echok echoctl -echoke time 5 min 1 line 0
+gksudo chmod 777 /dev/ttyUSB0
+cat /dev/ttyUSB0
+read -n1 p "press any key to stop santa communications" arbitraryVariable
